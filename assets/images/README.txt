@@ -1,0 +1,1 @@
+Place the existing approved RPJ logo here as rpj-logo.png. The website intentionally uses a text fallback until the logo file is added.
