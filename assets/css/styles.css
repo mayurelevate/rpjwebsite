@@ -2162,3 +2162,130 @@ textarea {
 } */
 
 /* home page end */
+
+/* Contact Page start */
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.contact-detail-card {
+  padding: 30px;
+  height: 100%;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-detail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 29, 53, 0.09);
+}
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: #fff1e7;
+  border-radius: 12px;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.contact-detail-card h3 {
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 11px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list a {
+  color: #101d35;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-list a:hover {
+  color: #ff8a32;
+}
+
+.working-hours strong {
+  color: #101d35;
+  font-size: 14px;
+}
+
+.contact-detail-card > a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ff8a32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-detail-card {
+    padding: 24px;
+  }
+}
+
+.contact-map {
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(16, 29, 53, 0.08);
+}
+
+.contact-map iframe {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contact-info-card {
+    padding: 22px;
+  }
+}
+
+.contact-map {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid #e5e9ef;
+  box-shadow: 0 8px 25px rgba(16, 29, 53, 0.08);
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-map iframe {
+    height: 300px;
+  }
+}
+
+/* End */
